@@ -93,8 +93,14 @@ This compiles the source files and places the compiled classes in the `bin` dire
 
 To run the unit tests (from the `VaccinationTracker/src` directory):
 
+**On Unix/Linux/macOS:**
 ```bash
 java -cp ../bin:path/to/junit.jar:path/to/hamcrest.jar org.junit.runner.JUnitCore junit_tests.StarterTests
+```
+
+**On Windows:**
+```bash
+java -cp ..\bin;path\to\junit.jar;path\to\hamcrest.jar org.junit.runner.JUnitCore junit_tests.StarterTests
 ```
 
 Note: Replace `path/to/junit.jar` and `path/to/hamcrest.jar` with the actual paths to your JUnit and Hamcrest JAR files.
