@@ -149,7 +149,7 @@ System.out.println(patientRecord.getVaccinationReceipt());
 
 The application includes three custom exceptions:
 
-1. **UnrecognizedVaccineCodeNameException**: Thrown when attempting to add a distribution with an unrecognized vaccine code
+1. **UnrecognizedVaccineCodeNameException**: Thrown when attempting to add a distribution with an unrecognized vaccine code. Only vaccines with recognized code names (mRNA-1273, BNT162b2, Ad26.COV2.S, AZD1222) can be distributed to vaccination sites
 2. **TooMuchDistributionException**: Thrown when adding a distribution would exceed the site's dose limit
 3. **InsufficientVaccineDosesException**: Thrown when attempting to book an appointment with no available doses
 
