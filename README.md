@@ -84,16 +84,20 @@ Vaccination-Tracker/
 To compile the project, navigate to the `VaccinationTracker/src` directory and run:
 
 ```bash
-javac model/*.java
+javac -d ../bin model/*.java junit_tests/*.java
 ```
+
+This compiles the source files and places the compiled classes in the `bin` directory.
 
 ### Running Tests
 
-To run the unit tests:
+To run the unit tests (from the `VaccinationTracker/src` directory):
 
 ```bash
-java -cp .:path/to/junit.jar:path/to/hamcrest.jar org.junit.runner.JUnitCore junit_tests.StarterTests
+java -cp ../bin:path/to/junit.jar:path/to/hamcrest.jar org.junit.runner.JUnitCore junit_tests.StarterTests
 ```
+
+Note: Replace `path/to/junit.jar` and `path/to/hamcrest.jar` with the actual paths to your JUnit and Hamcrest JAR files.
 
 ## Usage Examples
 
